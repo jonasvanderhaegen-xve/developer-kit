@@ -1,0 +1,8 @@
+# config.toml
+
+baseURL = "https://jonasvanderhaegen-xve.github.io/developer-kit/"
+languageCode = "en-us"
+title = "My Hugo Site example"
+theme = "your-theme-name"
+
+# (other settings as needed)
