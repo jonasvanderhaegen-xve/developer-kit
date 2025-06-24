@@ -87,6 +87,60 @@
 
 Below is an in-depth explanation of every alias defined in your `~/.zshrc`, followed by a line-by-line walkthrough of the `aliases()` (and its shortcut `als`) function.
 
+## 🚀 Laravel Sail Shortcuts
+
+These aliases wrap common Sail commands, so you spend less time typing and more time coding.
+
+| Alias       | Expansion                    | What it does                                                             |
+|------------:|------------------------------|---------------------------------------------------------------------------|
+| `s`         | `sail `                      | Base command: forwards whatever you type after `s` into `./vendor/bin/sail`.   |
+| `sa`        | `sail artisan `              | Runs Artisan commands inside the Sail container.                           |
+| `sc`        | `sail composer `             | Runs Composer commands inside the Sail container.                         |
+| `sm`        | `sa migrate`                 | Shortcut for `sail artisan migrate`: runs your database migrations.       |
+| `smf`       | `sa migrate:fresh`           | Runs `php artisan migrate:fresh` (drops all tables & re-runs migrations).|
+| `smfs`      | `sa migrate:fresh --seed`    | Same as `smf` + `--seed`: rebuilds the database and seeds with test data.|
+| `sup`       | `s up -d`                    | Starts all Sail services in detached (background) mode.                   |
+| `suspend`   | `s stop`                     | Stops all Sail services.                                                  |
+| `sus`       | `suspend`                    | A ❝lazy❞ alias for `suspend` (same as `s stop`).                           |
+| `sr`        | `sc run dev`                 | Runs `composer run dev` (often starts Webpack/Vite, mix watchers, etc.).  |
+
+---
+
+### How It Works
+
+1. **`s`**  
+   - If you type `s up`, it expands to `sail up`.  
+   - If you type `s artisan tinker`, it becomes `sail artisan tinker`.
+
+2. **`sa`**  
+   - Example: `sa tinker` → `sail artisan tinker`.
+
+3. **`sc`**  
+   - Example: `sc require livewire/livewire` → `sail composer require livewire/livewire`.
+
+4. **Migration Helpers (`sm`, `smf`, `smfs`)**  
+   - `sm`: Run any pending migrations.  
+   - `smf`: Drop & rebuild your schema (useful for a clean slate).  
+   - `smfs`: Same clean rebuild plus seed (populates tables with default/test data).
+
+5. **Service Control (`sup`, `suspend`, `sus`)**  
+   - `sup`: Start Docker containers in the background (`-d`).  
+   - `suspend`/`sus`: Stop all containers.  
+
+6. **Dev Runner (`sr`)**  
+   - Typically invokes your project’s `dev` script defined in `composer.json` (e.g. starts JS/CSS builds, hot reload, etc.).  
+
+---
+
+### Why These Matter
+
+- **Consistency**: Every Sail command lives under `s` → you never forget whether it’s `docker-compose` or `sail`.  
+- **Speed**: Two-letter shortcuts for the most-used tasks.  
+- **Safety**: Encourages use of `migrate:fresh` only when explicitly typed (`smf`), preventing accidental data loss.  
+
+Keep these in your muscle memory and you’ll navigate your Laravel Sail environment effortlessly!
+
+
 ---
 
 ## 📁 Directory Navigation
