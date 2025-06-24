@@ -15,9 +15,10 @@
    Upload your laptop’s public key to your work GitHub profile.
 
 4. **Download the installer script**
-   Save [install.ps1](https://raw.githubusercontent.com/jonasvanderhaegen-xve/windows-powershell-wsl-distro-importer/refs/heads/main/install.ps1) (e.g. to `Downloads`).
+5. 
+[Download `install.ps1` (raw)](https://raw.githubusercontent.com/jonasvanderhaegen-xve/windows-powershell-wsl-distro-importer/main/install.ps1) (e.g. to `Downloads`).
 
-5. **Run the installer**
+6. **Run the installer**
    In an elevated PowerShell session:
 
    ```powershell
@@ -27,31 +28,31 @@
 
    This pulls the XVE artifacts and registers a custom Alpine WSL distro.
 
-6. **Enable WSL integration in Docker**
+7. **Enable WSL integration in Docker**
 
    1. Open **Docker Desktop**
    2. Go to **Settings → Resources → WSL Integration**
    3. Toggle **XVE** on
    4. Click **Apply & Restart**
 
-7. **Restart your terminals**
+8. **Restart your terminals**
    Close all File Explorer and terminal windows so they pick up the new WSL distro.
 
-8. **Enter WSL**
+9. **Enter WSL**
    You can open a WSL shell by:
 
    * Right-clicking in your IDE’s terminal
    * Selecting the dropdown in Windows Terminal
    * Running `wsl` from any PowerShell/CMD prompt
 
-9. **SSH key symlink**
+10. **SSH key symlink**
    On first login, your Windows SSH keys will be linked into WSL at:
 
    ```
    \\wsl$\xve\home\<your-user>\.ssh
    ```
 
-10. **Clone & launch a test repo**
+11. **Clone & launch a test repo**
 
     ```bash
     cd /apps
@@ -62,7 +63,7 @@
 
     This will set environment variables, run `composer install` inside Docker, build containers, run migrations (and seeders), and install npm packages.
 
-11. **Start Laravel Sail**
+12. **Start Laravel Sail**
 
     ```bash
     sr
