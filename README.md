@@ -15,8 +15,9 @@
    Upload your laptop’s public key to your work GitHub profile.
 
 4. **Download the installer script**
-5. 
-[Download `install.ps1` (raw)](https://raw.githubusercontent.com/jonasvanderhaegen-xve/windows-powershell-wsl-distro-importer/main/install.ps1) (e.g. to `Downloads`).
+ 
+   <a href="https://raw.githubusercontent.com/jonasvanderhaegen-xve/windows-powershell-wsl-distro-importer/main/install.ps1" download>Download install.ps1</a> (e.g. to `Downloads`).
+
 
 6. **Run the installer**
    In an elevated PowerShell session:
