@@ -82,11 +82,3 @@
 
 > **Note:** On login, WSL also symlinks your SSH keys and (WIP) runs an Nginx Proxy Manager for local HTTPS domains.
 
-```
-
-**Changes made:**
-- Replaced long hyphens with simple hyphens and bullets  
-- Unified numbering (fixed the skipped “11”)  
-- Removed raw HTML (`<br>`) in favor of blank lines  
-- Streamlined explanations and bolded key actions for clarity
-```
