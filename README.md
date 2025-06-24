@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> **Note:** Do not follow these instructions yet until this notice is removed.<br>
+> **Planned:** [Nginx Proxy Manager](https://nginxproxymanager.com/)
+
 # XVE Dev Setup on Windows 11
 
 ## ⚡ Total Estimated Time: 14–29 minutes from step 1 to 7
