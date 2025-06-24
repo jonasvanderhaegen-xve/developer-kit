@@ -1,12 +1,12 @@
 # XVE Dev Setup on Windows 11
 
-````markdown
 
 1. # Enable WSL  
    Open PowerShell as Administrator and run:
+
    ```powershell
-   wsl --install
-````
+      wsl --install
+   ````
 
 2. **Install Docker Desktop**
    Download and install from the [Docker website](https://www.docker.com/).
@@ -49,17 +49,17 @@
 10. **SSH key symlink**
    On first login, your Windows SSH keys will be linked into WSL at:
 
-   ```
-   \\wsl$\xve\home\<your-user>\.ssh
+   ```bash
+      \\wsl$\xve\home\<your-user>\.ssh
    ```
 
 11. **Clone & launch a test repo**
 
     ```bash
-    cd /apps
-    git clone git@github.com:XVE-BV/test-wsl-git-repo.git
-    cd test-wsl-git-repo
-    ./scripts/sail.sh
+       cd /apps
+       git clone git@github.com:XVE-BV/test-wsl-git-repo.git
+       cd test-wsl-git-repo
+       ./scripts/sail.sh
     ```
 
     This will set environment variables, run `composer install` inside Docker, build containers, run migrations (and seeders), and install npm packages.
@@ -67,7 +67,7 @@
 12. **Start Laravel Sail**
 
     ```bash
-    sr
+       sr
     ```
 
     The `sr` alias runs Sail’s dev tasks: `php artisan serve`, your queue worker, and a log-viewer shell.
