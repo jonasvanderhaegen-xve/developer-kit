@@ -1,5 +1,7 @@
 # XVE Dev Setup on Windows 11
 
+## ⚡ Total Estimated Time: 14–29 minutes from step 1 to 7
+
 
 ## What’s XVE’s WSL Distro?
 
