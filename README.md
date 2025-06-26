@@ -87,3 +87,4 @@
 
 [Read more about Detailed Breakdown of Your Shell Aliases](ALIASES.md)
 
+[Read more about A comprehensive guide to the XVE WSL distro's built-in update and patch management tools for developers](PATCHES.md)
