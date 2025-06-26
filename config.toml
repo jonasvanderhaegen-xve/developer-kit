@@ -1,8 +1,49 @@
-# config.toml
+# XVE Developer Kit Hugo Configuration
 
 baseURL = "https://jonasvanderhaegen-xve.github.io/developer-kit/"
 languageCode = "en-us"
-title = "My Hugo Site example"
-theme = "your-theme-name"
+title = "XVE Developer Kit"
+description = "Complete development setup guide for Windows 11 with WSL, Docker, and Laravel Sail"
 
-# (other settings as needed)
+# Content and build settings
+contentDir = "content"
+layoutDir = "layouts"
+staticDir = "static"
+publishDir = "public"
+
+# Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+    codeFences = true
+
+# Site parameters
+[params]
+  author = "XVE Development Team"
+  description = "Professional developer toolkit and setup guide"
+  keywords = ["development", "WSL", "Docker", "Laravel", "Sail", "Windows", "setup"]
+  showTableOfContents = true
+
+# Menu configuration
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "Shell Aliases"
+  url = "/aliases/"
+  weight = 20
+
+# Build settings
+[build]
+  writeStats = true
+
+# Security settings
+[security]
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
