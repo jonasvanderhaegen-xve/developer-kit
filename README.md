@@ -1,8 +1,3 @@
-> [!IMPORTANT]
-> **Note:** Do not follow these instructions yet until this notice is removed.<br>
-> **Planned:**
-> - Bug: Redirect to apps/ only if shell goes to System32 -> done
-
 # XVE Dev Setup on Windows 11
 
 ## ⚡ Total Estimated Time: 14–29 minutes from step 1 to 7
