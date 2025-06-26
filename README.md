@@ -92,5 +92,5 @@
 
 ---
 
-[Read more about Detailed Breakdown of Your Shell Aliases](aliases.md)
+[Read more about Detailed Breakdown of Your Shell Aliases](ALIASES.md)
 
