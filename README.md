@@ -1,8 +1,6 @@
 > [!IMPORTANT]
 > **Note:** Do not follow these instructions yet until this notice is removed.<br>
 > **Planned:**
-> - Feature: [Nginx Proxy Manager](https://nginxproxymanager.com/) to maintain your custom local domains -> done
-> - Feature: Alternative to Laravel Herd Expose? ngrok perhaps Does laravel sail have a similar service available?
 > - Bug: Redirect to apps/ only if shell goes to System32 -> done
 
 # XVE Dev Setup on Windows 11
