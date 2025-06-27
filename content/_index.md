@@ -34,7 +34,7 @@ draft: false
 
 4. **Download the installer script**
  
-   <a href="https://raw.githubusercontent.com/jonasvanderhaegen-xve/windows-powershell-wsl-distro-importer/main/install.ps1" download>Download install.ps1</a> (e.g. to `Downloads`).
+   <a href="https://raw.githubusercontent.com/XVE-BV/windows-powershell-wsl-distro-importer/main/install.ps1" download>Download install.ps1</a> (e.g. to `Downloads`).
 
 6. **Run the installer**
    In an elevated PowerShell session:

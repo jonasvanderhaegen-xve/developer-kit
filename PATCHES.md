@@ -77,7 +77,7 @@ XVE_PATCH_REPO_OWNER="mycompany" XVE_PATCH_RELEASE_TAG="v2.0.0" selfupdate
 
 ### Default Configuration
 
-- **Repository**: `jonasvanderhaegen-xve/windows-powershell-wsl-distro-patches`
+- **Repository**: `XVE-BV/windows-powershell-wsl-distro-patches`
 - **Release**: `latest`
 - **Patches Directory**: `/opt/xve-patches/available`
 
@@ -85,7 +85,7 @@ XVE_PATCH_REPO_OWNER="mycompany" XVE_PATCH_RELEASE_TAG="v2.0.0" selfupdate
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `XVE_PATCH_REPO_OWNER` | GitHub repository owner | `jonasvanderhaegen-xve` |
+| `XVE_PATCH_REPO_OWNER` | GitHub repository owner | `XVE-BV` |
 | `XVE_PATCH_REPO_NAME` | GitHub repository name | `windows-powershell-wsl-distro-patches` |
 | `XVE_PATCH_RELEASE_TAG` | Release tag to download | `latest` |
 
@@ -263,7 +263,7 @@ journalctl -u patch-manager
 #### Network Issues
 ```bash
 # Test GitHub connectivity
-curl -s https://api.github.com/repos/jonasvanderhaegen-xve/windows-powershell-wsl-distro-patches/releases/latest
+curl -s https://api.github.com/repos/XVE-BV/windows-powershell-wsl-distro-patches/releases/latest
 
 # Check DNS resolution
 nslookup api.github.com
@@ -384,4 +384,4 @@ patch-manager status  # Verify system is up-to-date
 
 - [PATCH_SYSTEM.md](PATCH_SYSTEM.md) - Comprehensive patch system documentation
 - [README.md](README.md) - Main project documentation
-- [Example Patch Repository](https://github.com/jonasvanderhaegen-xve/windows-powershell-wsl-distro-patches) - Sample patches and repository structure
+- [Example Patch Repository](https://github.com/XVE-BV/windows-powershell-wsl-distro-patches) - Sample patches and repository structure

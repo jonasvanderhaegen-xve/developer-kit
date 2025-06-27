@@ -1,6 +1,6 @@
 # XVE Developer Kit Hugo Configuration
 
-baseURL = "https://jonasvanderhaegen-xve.github.io/developer-kit/"
+baseURL = "https://XVE-BV.github.io/developer-kit/"
 languageCode = "en-us"
 title = "XVE Developer Kit"
 description = "Complete development setup guide for Windows 11 with WSL, Docker, and Laravel Sail"
